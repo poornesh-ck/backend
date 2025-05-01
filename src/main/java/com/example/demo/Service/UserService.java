@@ -91,7 +91,7 @@ public class UserService {
 			sendMail(u.getEmail(), u.getAccNo(), u.getFname());
 			msg="created";
 		}catch(Exception e){
-			msg="failed";
+			msg="failed" + e.getMessage();
 			
 			
 		}		
